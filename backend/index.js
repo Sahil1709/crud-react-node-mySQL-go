@@ -1,10 +1,10 @@
 import express  from "express";
-import mysql from "mysql"
+import mysql2 from "mysql2"
 import cors from "cors"
 
 const app = express();
 
-const db = mysql.createConnection({
+const db = mysql2.createConnection({
     host: "db",
     user: "root",
     password: "my-secret-pw",
